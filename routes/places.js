@@ -16,7 +16,6 @@ places[key].push(kenkaiConferenceRoom);
 
 // [
 //     {
-//         billboard.obj
 //         Pos
 //         Rot
 //         Scal
