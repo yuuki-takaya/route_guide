@@ -6,7 +6,7 @@ var logger = require('morgan');
 const favicon = require('serve-favicon');
 const bodyParser = require('body-parser');
 const http = require('http');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -17,13 +17,13 @@ var app = express();
 
 // Database setup
 mongoose.Promise = global.Promise;
-const mongodbUri = 'mongodb://localhost/route_guide';
-const mongOptions = {
-    useMongoClient: true,
-    socketTimeoutMS: 0,
-    keepAlive: true,
-    reconnectTries: 30
-};
+// const mongodbUri = 'mongodb://localhost/route_guide';
+// const mongOptions = {
+//     useMongoClient: true,
+//     socketTimeoutMS: 0,
+//     keepAlive: true,
+//     reconnectTries: 30
+// };
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -64,7 +64,7 @@ app.use(function(err, req, res, next) {
 
 var server = http.createServer(app).listen(app.get('httpport'), function(){
   console.log('Express HTTP server listening on port ' + app.get('httpport'));
-  mongoose.connect(mongodbUri, mongOptions);
+  // mongoose.connect(mongodbUri, mongOptions);
 });
 
 module.exports = app;
