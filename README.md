@@ -20,5 +20,5 @@ $ node app.js
 この画面では、Objectの登録を行うことが出来ます。
 
 5.```localhost:3000/places```では、Queryの結果をJSON形式に変換して返します。<br />
-Query Stringsは```localhost:3000/places/?名前=場所名```で表示することが出来ます。
+Query Stringsは```localhost:3000/places/?place=場所名```で表示することが出来ます。
 
