@@ -2,4 +2,4 @@
 ## 使用ライブラリ等
 - MongoDB
 - Express
-- multer（S3へ保存する場合はmulter-s3を使用：https://www.npmjs.com/package/multer-s3 ）
+- <a href="https://github.com/expressjs/multer">multer</a>（S3へ保存する場合は<a href="https://www.npmjs.com/package/multer-s3">multer-s3</a>を使用）
