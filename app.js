@@ -16,7 +16,7 @@ var characterRouter = require('./routes/characters')
 var app = express();
 
 // Database setup
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 // const mongodbUri = 'mongodb://localhost/route_guide';
 // const mongOptions = {
 //     useMongoClient: true,
