@@ -32,6 +32,9 @@ app.set('view engine', 'ejs');
 // ポート設定
 app.set('httpport', process.env.PORT || 3000);
 
+//静的ファイル提供ディレクトリの設定
+app.use(express.static('public'));
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
