@@ -7,5 +7,17 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <form method="POST" action="/" enctype="multipart/form-data">
+      <select name="save_directory">
+        <option value="#">保存先を選択</option>
+        <option value="kenkai">kenkai</option>
+        <option value="toilet">toilet</option>
+        <option value="elevator">elevator</option>
+        <option value="reflesh">reflesh</option>
+      </select><br /> 
+      <input type="file" name="upFile" /><br />
+      <input type="text" name="upText"/><br />
+      <input type="submit" value="アップロード" />
+    </form>
   </body>
 </html>
