@@ -22,3 +22,5 @@ $ node app.js
 5.```localhost:3000/places```では、Queryの結果をJSON形式に変換して返します。<br />
 Query Stringsは```localhost:3000/places/?place=場所名```で表示することが出来ます。
 
+`Local Areaで使う場合は、IP決め打ちソースにベタがきしてるので各自変更お願いします`
+
