@@ -1,3 +1,5 @@
+
+var subdomain = require('express-subdomain');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -41,10 +43,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(subdomain('api', indexRouter));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/places', placesRouter);
-app.use('/characters',characterRouter);
+// app.use('/places', placesRouter);
+// app.use('/characters',characterRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
