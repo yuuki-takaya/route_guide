@@ -65,7 +65,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var server = http.createServer(app).listen(app.get('httpport'), function(){
+var server = http.createServer(app).listen(80, function(){
+  process.setuid(USER);
   console.log('Express HTTP server listening on port ' + app.get('httpport'));
   // mongoose.connect(mongodbUri, mongOptions);
 });
